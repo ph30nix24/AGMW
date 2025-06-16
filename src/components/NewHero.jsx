@@ -11,7 +11,7 @@ const NewHero = () => {
     const nextVideoRef = useRef(null);
     const [CurrentIndex, setCurrentIndex] = useState(1);
     const [hasClicked, setHasClicked] = useState(false);
-    const getVideoSrc = (index) => `/videos/hero-${index}.mp4`;
+    const getVideoSrc = (index) => `./videos/hero-${index}.mp4`;
     const totalVideos = 4;
     const clickHandler = () => {
         setHasClicked(true);

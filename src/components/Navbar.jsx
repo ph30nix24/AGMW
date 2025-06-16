@@ -19,7 +19,7 @@ const Navbar = () => {
         setIsVisible(true);
       }
       else if (currentY > prevScrollY) {
-        document.querySelector('#nav').classList.add('!bg-black');
+        document.querySelector('#nav').classList.add('bg-black');
         document.querySelector('#nav').classList.add('opacity-0');
         setIsVisible(false);
       }
@@ -45,9 +45,9 @@ const Navbar = () => {
   const links = ['nexus', 'vault', 'prologue', 'about', 'contact']
   return (
     <div className='w-screen md:h-22 h-fit z-50 px-2 md:px-6 py-3 overflow-y-hidden fixed' ref={navBar} id='navbar'>
-        <div id='nav' className={` flex rounded-xl h-full px-4 py-2 md:py-0 items-center justify-between flex-col md:flex-row ${isClicked ? 'bg-black backdrop-blur-sm' : 'bg-none backdrop-blur-none'}`} ref={navContainerRaf}>
+        <div id='nav' className={` flex rounded-xl h-full px-4 py-2 md:py-0 items-center justify-between flex-col md:flex-row ${isClicked ? 'bg-black md:bg-transparent backdrop-blur-sm' : 'bg-none backdrop-blur-none'}`} ref={navContainerRaf}>
           <div className='flex h-full items-center gap-10 text-white w-full md:w-fit justify-between '>
-            <img className='w-11 h-11 object-contain' src="/img/logo.png" alt="" />
+            <img className='w-11 h-11 object-contain' src="./img/logo.png" alt="" />
             <div className='hidden md:block'>
               <Button title={'products'} addition={'!bg-white'} rightIcon={<IoIosPaperPlane />} id={'products'}/>
             </div>

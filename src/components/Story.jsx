@@ -11,7 +11,7 @@ const Story = () => {
             the story of <br/> a hidden realm
         </h1>
         <div className='[clip-path:polygon(22.53%_6.38%,_81.14%_22.25%,_81.14%_75%,_19.43%_92.25%)] mx-auto rotate-y-12 overflow-hidden w-[100%] md:h-[90vh] h-[35vh] rounded-[42px] absolute md:top-[18%] top-[25%] left-0 z-10'>
-            <img className='w-full h-full object-contain rounded-2xl object-center' src="/img/entrance.webp" alt="" />
+            <img className='w-full h-full object-contain rounded-2xl object-center' src="./img/entrance.webp" alt="" />
         </div>
         <div className='absolute bottom-0 right-0 md:w-[30%] w-screen h-fit md:pb-16 pb-8 px-3 md:px-0 md:block flex flex-col items-center'>
             <p className='text-white font-para text-sm pt-2 md:text-start pb-6 text-center'>

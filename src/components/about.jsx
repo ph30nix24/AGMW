@@ -53,7 +53,7 @@ const about = () => {
       </div>
       <div className='h-dvh w-screen' id="image-clip">
           <div className='[clip-path:polygon(0_0,100%_0,100%_100%,0%_100%] absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw]' id='about-img'>
-            <img src="/img/about.webp" alt="" className='absolute top-0 left-0 size-full object-cover'/>
+            <img src="./img/about.webp" alt="" className='absolute top-0 left-0 size-full object-cover'/>
           </div>
       </div>
     </div>
