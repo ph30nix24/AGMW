@@ -1,6 +1,8 @@
 import React from 'react'
 import FeatureButton from './FeatureButton'
 import { IoIosPaperPlane } from "react-icons/io";
+import FeatureCards from './FeatureCards';
+
 
 const Feature = () => {
   return (
@@ -11,64 +13,12 @@ const Feature = () => {
                 Immerse yourself in a rich and ever-expanding universe <br className='hidden md:block text-[14px] md:text-[16px]'/> where a vibrant array of products converge into an <br className='hidden md:block text-[14px] md:text-[16px]'/> interconnected overlay experience on your world
             </p>
         </div>
-        <div className='w-full h-[500px] border border-gray-600 rounded-lg overflow-hidden md:mb-8 mb-4 relative'>
-            <video src="./videos/feature-1.mp4" className='w-full h-full object-cover object-center' autoPlay muted loop />
-            <div className='absolute top-0 left-0 w-full h-full flex justify-between md:px-6 px-3 md:py-4 py-3 flex-col'>
-                <div>
-                    <h1 className='text-white md:text-[62px] text-[42px] font-Luck leading-none font-extralight uppercase'>radiant</h1>
-                    <p className='text-gray-100 font-para text-sm pt-2'>
-                        A cross-platform metagame app, <br/> turning your activities across Web2 <br/> and Web3 games into a rewarding adventure.
-                    </p>
-                </div>
-                <div className='justify-self-end'>
-                    <FeatureButton />
-                </div>
-            </div>
-        </div>
+        <FeatureCards videoSrc='./videos/feature-1.mp4' title="radiant" paraGraph="A cross-platform metagame app, <br/> turning your activities across Web2 <br/> and Web3 games into a rewarding adventure." adition="w-full h-[500px]"/>   
         <div className='w-full md:h-[700px] min-h-screen flex md:flex-row flex-col md:gap-8 md:pb-8 gap-4 pb-4'>
-            <div className='md:w-1/2 w-full h-full border border-gray-600 rounded-lg overflow-hidden relative'>
-                <video src="./videos/feature-2.mp4" className='w-full h-full object-cover object-center ' autoPlay muted loop type="video/mp4" />
-                <div className='absolute top-0 left-0 w-full h-full flex justify-between md:px-6 md:py-4 px-3 py-2 flex-col'>
-                <div>
-                    <h1 className='text-white md:text-[62px] text-[42px] font-Luck leading-none font-extralight uppercase'>zigma</h1>
-                    <p className='text-gray-100 font-para text-sm pt-2'>
-                        An anime and gaming-inspired NFT <br/> collection-the IP primed for <br/> expansion
-                    </p>
-                </div>
-                <div className='justify-self-end'>
-                    <FeatureButton />
-                </div>
-            </div>
-            </div>
+            <FeatureCards videoSrc='./videos/feature-2.mp4' title="zigma" paraGraph="An anime and gaming-inspired NFT <br/> collection-the IP primed for <br/> expansion" adition="md:w-1/2 w-full h-full" />
             <div className='w-full md:w-1/2 h-full flex flex-col md:gap-8 gap-4'>
-                <div className='w-full h-1/2 border border-gray-600 rounded-lg overflow-hidden relative'>
-                    <video src="./videos/feature-3.mp4" className='w-full h-full object-cover object-center ' autoPlay muted loop type="video/mp4" />
-                    <div className='absolute top-0 left-0 w-full h-full flex justify-between md:px-6 px-3 md:py-4 py-2 flex-col'>
-                        <div>
-                            <h1 className='text-white md:text-[62px] text-[42px] font-Luck leading-none font-extralight uppercase'>nexus</h1>
-                            <p className='text-gray-100 font-para text-sm pt-2'>
-                            A gamified social hub, adding a new <br/> dimension of play to social <br/> interaction for Web3 communities
-                        </p>
-                        </div>
-                        <div className='justify-self-end'>
-                            <FeatureButton />
-                        </div>
-                    </div>
-                </div>
-                <div className='w-full h-1/2 border border-gray-600 rounded-lg overflow-hidden relative'>
-                    <video src="./videos/feature-4.mp4" className='w-full h-full object-cover object-center ' autoPlay muted loop type="video/mp4" />
-                    <div className='absolute top-0 left-0 w-full h-full  flex justify-between md:px-6 px-3 md:py-4 py-3 flex-col'>
-                        <div>
-                            <h1 className='text-white md:text-[62px] text-[42px] font-Luck leading-none font-extralight uppercase'>azul</h1>
-                            <p className='text-gray-100 font-para text-sm pt-2'>
-                            A cross-world AI Agent-elevating <br/> your gameplay to be more fun and <br/> productive.
-                        </p>
-                        </div>
-                        <div className='justify-self-end'>
-                            <FeatureButton />
-                        </div>
-                    </div>
-                </div>
+                <FeatureCards videoSrc="./videos/feature-3.mp4" title="nexus" paraGraph="A gamified social hub, adding a new <br/> dimension of play to social <br/> interaction for Web3 communities" adition="w-full h-1/2 !mb-0" />
+                <FeatureCards videoSrc="./videos/feature-4.mp4" title="azul" paraGraph="A cross-world AI Agent-elevating <br/> your gameplay to be more fun and <br/> productive." adition="w-full h-1/2 !mb-0" />
             </div>
         </div>
         <div className='w-full h-[400px] flex md:flex-row flex-col gap-8 pb-8'>

@@ -31,7 +31,6 @@ const App = () => {
   const {x: currentX, y: currentY} = useMousePosition();
   useEffect(() => {
     if(movingDiv.current){
-      console.log(currentX, currentY);
       gsap.to(movingDiv.current, {
         x: currentX,
         y: currentY,
