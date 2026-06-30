@@ -138,8 +138,6 @@ Add screenshots or GIFs here.
 
 Example:
 
-```md
-
 <img width="1897" height="1092" alt="image" src="https://github.com/user-attachments/assets/e4176a47-1a20-4c7a-b7b4-d08acc3c3467" />
 
 
@@ -149,7 +147,6 @@ Example:
 
 <img width="1896" height="1090" alt="image" src="https://github.com/user-attachments/assets/10a00b7a-8eec-4db9-afff-abc52fd37771" />
 
-```
 
 ---
 
